@@ -1,0 +1,94 @@
+/* Reset some basic elements */
+body, h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+  background-color: #f1faee; /* Light background color */
+  color:black; /* Dark gray text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Add some padding */
+}
+
+/* Container styling */
+.container {
+
+  background-size: cover; /* Cover the container with the background image */
+  background-position: center; /* Center the background image */
+  color:black; /* White text for contrast */
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  max-width: 500px; /* Limit the width for a compact design */
+  text-align: center; /* Center align the text */
+}
+
+/* Heading styling */
+.container h1 {
+  font-size: 2em; /* Large font size for headings */
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+#para {
+  font-size: 1.2em; /* Slightly larger font size for emphasis */
+  line-height: 1.5; /* Improved readability with line height */
+  margin-bottom: 20px;
+}
+
+/* Input styling */
+#guessnumber {
+  width: calc(100% - 24px); /* Full width minus padding */
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Light border */
+  margin-bottom: 20px;
+  outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+#Checknumber {
+  background-color: #007BFF; /* Primary button color */
+  color: #fff; /* White text */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+#Checknumber:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Result styling */
+.result {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  #guessnumber, #Checknumber {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  .result {
+    font-size: 1.2em;
+  }
+}
